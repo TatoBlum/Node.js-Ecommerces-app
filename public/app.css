@@ -133,11 +133,24 @@ body.index .blurb{
   margin: 0 auto 20px auto;
   max-width: 500px;
   line-height: 150%;
-  font-size: 14px;
+}
+
+.blurb{
+  display: flex;
+  justify-content: center;
+  font-size: 15px !important;
+
 }
 
 .ctaWrapper{
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 15px auto;
+  align-items: center;
+}
+.ctaWrapper a {
+  margin-bottom: 10;
 }
 
 .cta,a.cta:hover,a.cta:active,a.cta:visited,button.cta:hover,button.cta:active,button.cta:visited{
