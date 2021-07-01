@@ -1,0 +1,32 @@
+<h1>Create Your Account</h1>
+<h2>Signup is easy and only takes a few seconds.</h2>
+
+<!-- {"name":"John Doe","adress":"Pe 1234","email":"mail@mail.com","hashedPassword":"045f37e62b84794dc94d4bab4fff534ec55bbf1b8bbab6fff99942d3b4f36191","cart":[{"id":"4la6fn1mfgtygxcw03th","createTime":"Mon Jun 21 2021 11:54:13 GMT-0300 (hora estándar de Argentina)","checkout":false},{"id":"u34unkx8l3","createTime":"Mon Jun 21 2021 15:20:32 GMT-0300 (hora estándar de Argentina)","checkout":true},{"id":"8pj5k45gvj","createTime":"Mon Jun 21 2021 15:21:40 GMT-0300 (hora estándar de Argentina)","checkout":true},{"id":"vcbnxz62nd","createTime":"Mon Jun 21 2021 15:31:31 GMT-0300 (hora estándar de Argentina)","checkout":true},{"id":"uqcmzy6ijq","createTime":"Mon Jun 21 2021 15:33:19 GMT-0300 (hora estándar de Argentina)","checkout":true},{"id":"njuvurd4q0","createTime":"Mon Jun 21 2021 15:34:28 GMT-0300 (hora estándar de Argentina)","checkout":true},{"id":"mefc11eug4","createTime":"Mon Jun 21 2021 15:37:19 GMT-0300 (hora estándar de Argentina)","checkout":true},{"id":"aoqs4dw3on","createTime":"Mon Jun 21 2021 15:38:58 GMT-0300 (hora estándar de Argentina)","checkout":true},{"id":"88boqpdz98","createTime":"Mon Jun 21 2021 15:42:02 GMT-0300 (hora estándar de Argentina)","checkout":true},{"id":"83qtwl4cs146spa0p193","createTime":"Mon Jun 21 2021 18:33:32 GMT-0300 (hora estándar de Argentina)","checkout":false}]} -->
+<div class="formWrapper">
+  <form id="accountCreate" action="/api/users" method="POST">
+    <div class="formError"></div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Name</div>
+      <input type="text" name="name" placeholder="John Smith" />
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Adress</div>
+      <input type="text" name="adress" placeholder="Your adress" />
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Email</div>
+      <input type="email" name="email" placeholder="example@mail.com" />
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Choose a Password</div>
+      <input type="password" name="password" placeholder="**********" />
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Do you agree to the terms and conditions?</div>
+      <input type="checkbox" name="tosAgreement" value="agree">
+    </div>
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta blue">Get Started</button>
+    </div>
+  </form>
+</div>
